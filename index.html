@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Zulianny</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        .carta {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .carta::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://i.pinimg.com/236x/cf/4e/c0/cf4ec0f1cd566491fe962ed9d2f68d67.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3; /* Ajusta la transparencia de la imagen */
+            z-index: 1; /* Coloca la imagen detrás del contenido */
+        }
+        h1 {
+            color: #e74c3c;
+            font-size: 32px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2; /* Asegura que el texto esté sobre la imagen */
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 15px 0;
+            position: relative;
+            z-index: 2; /* Asegura que el texto esté sobre la imagen */
+        }
+        .firma {
+            font-style: italic;
+            margin-top: 20px;
+            color: #555;
+            font-size: 20px;
+            position: relative;
+            z-index: 2; /* Asegura que el texto esté sobre la imagen */
+        }
+        .corazon {
+            color: #e74c3c;
+            font-size: 24px;
+        }
+        .decoracion {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+            opacity: 0.1;
+            z-index: 1;
+        }
+        .decoracion-2 {
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            border-radius: 50%;
+            opacity: 0.1;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="carta">
+        <div class="decoracion"></div>
+        <div class="decoracion-2"></div>
+        <h1>¡Feliz Día del Médico! <span class="corazon">❤️</span></h1>
+        <p>Hola <strong>Zulianny</strong>,</p>
+        <p>
+            Hoy es un día muy especial para celebrar a personas increíbles como tú, que dedican su vida a cuidar de los demás. 
+            Quería aprovechar esta ocasión para decirte lo mucho que admiro tu esfuerzo, dedicación y pasión por la medicina. 
+            Eres una persona única, y estoy seguro de que serás una profesional excepcional.
+        </p>
+        <p>
+            Espero que hoy esté lleno de alegría, reconocimiento y momentos especiales. ¡Te lo mereces!
+        </p>
+        <p class="firma">Con mucho cariño,<br><strong>Leandro</strong></p>
+    </div>
+</body>
+</html>
